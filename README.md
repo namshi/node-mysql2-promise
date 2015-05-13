@@ -3,7 +3,7 @@
 Small promises wrapper for [`mysql2`](https://github.com/sidorares/node-mysql2), 
 it's forked and compatible with [`mysql-promise`](https://github.com/martinj/node-mysql-promise).
 
-[![build status](https://api.travis-ci.com/namshi/node-mysql2-promise.svg?token=tS5zF7JF9Zh1pepFK56c)](http://travis-ci.org/namshi/node-mysql2-promise)
+[![build status](https://travis-ci.org/namshi/node-mysql2-promise.svg)](http://travis-ci.org/namshi/node-mysql2-promise)
 
 ## Installation
 
