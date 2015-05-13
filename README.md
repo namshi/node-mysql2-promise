@@ -4,6 +4,8 @@ Small promises wrapper for [`mysql2`](https://github.com/sidorares/node-mysql2),
 it's forked and compatible with [`mysql-promise`](https://github.com/martinj/node-mysql-promise).
 
 [![build status](https://travis-ci.org/namshi/node-mysql2-promise.svg)](http://travis-ci.org/namshi/node-mysql2-promise)
+[![NPM](https://img.shields.io/npm/v/mysql2-promise.svg)](https://www.npmjs.com/package/mysql2-promise)
+[![NPM](https://img.shields.io/npm/dm/mysql2-promise.svg)](https://www.npmjs.com/package/mysql2-promise)
 
 ## Installation
 

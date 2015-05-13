@@ -5,3 +5,4 @@ script:
   - npm test
 notifications:
   email: dev@namshi.com
+
