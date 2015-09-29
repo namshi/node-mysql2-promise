@@ -82,7 +82,7 @@ db.configure({
 	"database": "db"
 });
 
-connection.pool.on('connection', function (poolConnection) {
+db.pool.on('connection', function (poolConnection) {
     poolConnection.config.namedPlaceholders = true;
 }
 
