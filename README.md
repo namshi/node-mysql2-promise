@@ -84,7 +84,7 @@ db.configure({
 
 db.pool.on('connection', function (poolConnection) {
     poolConnection.config.namedPlaceholders = true;
-}
+});
 
 db.execute('SELECT * FROM users WHERE LIMIT = :limit', {limit: 10}).spread(function (users) {
 	console.log('Hello users', users);
