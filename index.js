@@ -35,7 +35,7 @@ DB.prototype.query = function (query, params) {
           con.release();
         }
 
-        reject(err);
+        return reject(err);
       }
 
       con.query(query, params, function (err) {
