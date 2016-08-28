@@ -43,7 +43,7 @@ DB.prototype.query = function (query, params) {
           if (con) {
             con.release();
           }
-          
+
           return reject(err);
         }
 
@@ -77,13 +77,15 @@ DB.prototype.execute = function (query, params) {
       con.execute(query, params, function (err) {
         if (err) {
           if (con) {
+            con.unprepare(query);
             con.release();
           }
-          
+
           return reject(err);
         }
 
         resolve([].splice.call(arguments, 1));
+        con.unprepare(query);
         con.release();
       });
     });
