@@ -9,6 +9,9 @@ describe('mysql2-promise', function () {
     namedDb.should.equal(db('foo'));
     namedDb.should.have.property('query').which.is.a.Function;
     namedDb.should.have.property('execute').which.is.a.Function;
+    namedDb.should.have.property('startTransaction').which.is.a.Function;
+    namedDb.should.have.property('commit').which.is.a.Function;
+    namedDb.should.have.property('rollback').which.is.a.Function;
     defaultDb.should.equal(db());
     defaultDb.should.not.equal(namedDb);
     defaultDb.should.have.property('query').which.is.a.Function;
